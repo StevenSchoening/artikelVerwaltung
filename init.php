@@ -14,8 +14,6 @@ $smarty = new Smarty;
 
 $rootDir = __DIR__;
 
-echo $rootDir;
-
 spl_autoload_register(function($class)
 {
     global $rootDir;

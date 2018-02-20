@@ -8,6 +8,6 @@
 
 require_once 'init.php';
 
-$smarty->debugging = true;
+//$smarty->debugging = true;
 
 $smarty->display($template_dir . 'index.tpl');
