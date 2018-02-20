@@ -18,5 +18,5 @@ $template_dir = realpath($rootDir . DIRECTORY_SEPARATOR . 'templates');
 spl_autoload_register(function($class)
 {
     global $rootDir;
-    include  "$rootDir\\classes\\$class.php ";
+    include  $rootDir . DIRECTORY_SEPARATOR . 'classes' . DIRECTORY_SEPARATOR . $class . '.php';
 });
