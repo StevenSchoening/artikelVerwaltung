@@ -13,7 +13,7 @@ $smarty = new Smarty;
 
 $rootDir = __DIR__;
 
-$template_dir = realpath($rootDir . '\\templates');
+$template_dir = realpath($rootDir . DIRECTORY_SEPARATOR . 'templates');
 
 spl_autoload_register(function($class)
 {
