@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2018-02-20 14:16:46
+<?php /* Smarty version 2.6.31, created on 2018-02-20 14:22:47
          compiled from C:%5Cxampp%5Chtdocs%5Cartikelverwaltung%5Ctemplates%5Cindex.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -16,18 +16,8 @@
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
-           href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Artikelverwaltung</a>
     </div>
-</div>
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
 </div>
 
 <!-- Page Container -->
@@ -49,9 +39,11 @@
 
                     <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">
                         <i class="fa fa-search fa-fw w3-margin-right"></i> Artikelsuche
-                                            </button>
+                    </button>
                     <div id="Demo2" class="w3-hide w3-container">
-                        <input type="text" placeholder="Suchgbegriff" id="artikel-search">
+                        <form method="get" action="/artikelverwaltung/index.php">
+                            <input type="text" placeholder="Suchgbegriff" id="artikel-search" name="query">
+                        </form>
                     </div>
 
                 </div>
@@ -62,7 +54,7 @@
         </div>
 
         <!-- Middle Column -->
-        <div class="w3-col m7">
+        <div class="w3-col m9">
 
             <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
                 <h4>John Doe</h4>
@@ -77,16 +69,7 @@
         </div>
 
         <!-- Right Column -->
-        <div class="w3-col m2">
-            <div class="w3-card w3-round w3-white w3-center">
-                <div class="w3-container">
-                    <p>Upcoming Events:</p>
-                </div>
-            </div>
-            <br>
-            <!-- End Right Column -->
-        </div>
-
+                                                                                                                    
         <!-- End Grid -->
     </div>
 
