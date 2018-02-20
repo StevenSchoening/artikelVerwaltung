@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 
 *.iml
 .idea/modules.xml
 .idea/vcs.xml
 .idea/workspace.xml
+=======
+.buildpath
+.project
+.settings/
+>>>>>>> f08f253acfbf6d8bbb4ff1d9949fea4cb5c76500
