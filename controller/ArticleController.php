@@ -13,6 +13,19 @@ class ArticleController
 
     public function addNewArticle() {
 
+    }
+
+    public function deleteArticle() {
+
+
+    }
+
+    public function getArticleFromArtno() {
+
+    }
+
+    public function getLastXArticles($limit) {
+
 
 
 
