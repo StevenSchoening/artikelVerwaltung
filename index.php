@@ -10,4 +10,4 @@ require_once 'init.php';
 
 //$smarty->debugging = true;
 
-$smarty->display($template_dir . 'index.tpl');
+$smarty->display(realpath($template_dir . '\\index.tpl'));

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Artikelverwaltung</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="http://localhost/artikelverwaltung/templates/stylesheets/styles.css">
+
 <body class="w3-theme-l5">
 
 <!-- Navbar -->
@@ -28,17 +29,10 @@
             <!-- Accordion -->
             <div class="w3-card w3-round">
                 <div class="w3-white">
-                    <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
-                                class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Neuste Artikel
-                    </button>
-                    <div id="Demo1" class="w3-hide w3-container">
-                        <p>Some text..</p>
-                    </div>
-
-                    <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align">
+                    <button onclick="myFunction('search-area')" class="w3-button w3-block w3-theme-l1 w3-left-align">
                         <i class="fa fa-search fa-fw w3-margin-right"></i> Artikelsuche
                     </button>
-                    <div id="Demo2" class="w3-hide w3-container">
+                    <div id="search-area" class="w3-hide w3-container">
                         <form method="get" action="/artikelverwaltung/index.php">
                             <input type="text" placeholder="Suchgbegriff" id="artikel-search" name="query">
                         </form>

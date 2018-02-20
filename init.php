@@ -8,11 +8,12 @@
 
 require_once 'smarty/Smarty.class.php';
 
-$template_dir = 'C:\xampp\htdocs\artikelverwaltung\templates\\';
 
 $smarty = new Smarty;
 
 $rootDir = __DIR__;
+
+$template_dir = realpath($rootDir . '\\templates');
 
 spl_autoload_register(function($class)
 {
